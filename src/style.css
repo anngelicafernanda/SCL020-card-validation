@@ -1,0 +1,24 @@
+header {
+  background: linear-gradient(to bottom right, #adc5d9, #3c4973);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+footer {
+  margin-left: 100px;
+}
+
+form {
+  font-size: 20px;
+  text-align: center;
+}
+
+#validador {
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 5px;
+}
