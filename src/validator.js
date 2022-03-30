@@ -1,5 +1,3 @@
-//import { inputRequiresLabel } from "htmlhint";
-
 const validator = {
   validar: function (valorInput) {
     //validar: (valorInput) => {
@@ -9,26 +7,26 @@ const validator = {
     let convierteTarjetaArray = tarjeta.split("");
     //console.log(convierteTarjetaArray)
 
-    let numerotemporal = convierteTarjetaArray.filter((char) => char != " ");
-    //console.log(numerotemporal);
+    let numeroTemporal = convierteTarjetaArray.filter((char) => char != " ");
+    //console.log(numeroTemporal);
 
-    //let darReverseTarjeta = numerotemporal.reverse();
+    //let darReverseTarjeta = numeroTemporal.reverse();
     //console.log(darReverseTarjeta);
 
-    for (let i = 0; i < numerotemporal.length; i++) {
+    for (let i = 0; i < numeroTemporal.length; i++) {
       if (i % 2 === 0) {
-        let aux = numerotemporal[i] * 2;
-        if (aux >= 10) {
-          let aux2 = aux - 9;
-          numerotemporal[i] = aux2;
+        let acumulador = numeroTemporal[i] * 2;
+        if (acumulador >= 10) {
+          let acumulador2 = acumulador - 9;
+          numeroTemporal[i] = acumulador2;
         } else {
-          numerotemporal[i] = aux;
+          numeroTemporal[i] = acumulador;
         }
       }
 
       let suma = 0;
-      for (let i = 0; i < numerotemporal.length; i++) {
-        suma += parseInt(numerotemporal[i]);
+      for (let i = 0; i < numeroTemporal.length; i++) {
+        suma += parseInt(numeroTemporal[i]);
       }
       console.log(suma);
       //Debemos de comprobar si es multiplo de 10

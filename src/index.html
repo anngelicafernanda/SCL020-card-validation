@@ -11,19 +11,27 @@
     <header>
       <img src="atenea tech.png" alt="" width="170px" height="120px" />
       <h1>Ingrese los Datos de su Tarjeta</h1>
+      <br />
     </header>
+    <br />
     <form class="formulario-tarjeta">
-      <label for="inputNombre">Nombre y Apellido:</label><br /><br />
-      <input type="text" id="inputNombre" /> <br /><br />
-      <label for="inputNumero">Nro. de tarjeta:</label><br /><br />
-      <input type="text" id="inputNumero" maxlength="19" /><br /><br />
-      <label for="month">Mes:</label><br /><br />
-      <input type="text" id="month" /><br /><br />
-      <label for="year">Año:</label><br /><br />
-      <input type="text" id="year" /> <br /><br />
-      <label for="cvv">CVV:</label><br /><br />
-      <input type="text" id="cvv" /><br /><br /><br />
-      <button type="submit">Usar Esta Tarjeta</button><br /><br />
+      <div class="box1">
+        <label for="inputNombre">Nombre y Apellido:</label><br /><br />
+        <input type="text" id="inputNombre" /> <br /><br />
+        <label for="inputNumero">Nro. de tarjeta:</label><br /><br />
+        <input type="text" id="inputNumero" maxlength="19" /><br /><br />
+      </div>
+      <div class="box2">
+        <label for="month">Mes:</label><br /><br />
+        <input type="text" id="month" /><br /><br />
+        <label for="year">Año:</label><br /><br />
+        <input type="text" id="year" /> <br /><br />
+        <label for="cvv">CVV:</label><br /><br />
+        <input type="text" id="cvv" /><br /><br /><br />
+      </div>
+      <div class="box3">
+        <button type="submit">Usar Esta Tarjeta</button><br /><br />
+      </div>
     </form>
     <p class="esValida"></p>
     <footer><button>Volver al Inicio</button></footer>
