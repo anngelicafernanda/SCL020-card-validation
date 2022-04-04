@@ -2,15 +2,35 @@ header {
   background: linear-gradient(to bottom right, #adc5d9, #3c4973);
 }
 
+.logoTexto {
+  display: flex;
+  align-items: flex-start;
+  height: 200px;
+  width: 1800px;
+}
+
 h1 {
-  text-align: center;
   color: white;
+  font-size: 40px;
+  height: 200px;
+  width: 700px;
+  margin-left: 300px;
+  margin-top: 120px;
+}
+
+h2 {
+  color: white;
+  font-size: 14px;
+  height: 200px;
+  width: 700px;
 }
 
 .formulario-tarjeta {
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  color: #3772a6;
+  margin-top: 30px;
 }
 
 .box1 {
@@ -21,6 +41,15 @@ h1 {
 .box2 {
   display: flex;
   justify-content: center;
+  gap: 0px 10px;
+}
+
+.boxMonth,
+.boxYear,
+.boxCVV {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .box3 {
@@ -33,8 +62,10 @@ h1 {
   background: #b0babf;
   width: 330px;
   height: 50px;
-  font-size: 15px;
-  border-radius: 20px;
+  font-size: 12px;
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 20px;
 }
 
 #month,
@@ -44,14 +75,17 @@ h1 {
   width: 125px;
   height: 50px;
   font-size: 15px;
-  border-radius: 20px;
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 20px;
 }
 
 button {
   background: #3c4973;
-  width: 160px;
-  height: 50px;
   font-size: 18px;
   color: white;
-  border-radius: 20px;
+  border-radius: 30px;
+  padding: 20px 30px;
+  margin-bottom: 100px;
+  border: none;
 }
