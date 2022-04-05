@@ -6,11 +6,9 @@ const esValida = document.querySelector(".esValida");
 
 nombreTarjeta.addEventListener("keyup", (e) => {
   let valorNombre = e.target.value;
-  nombreTarjeta.value = valorNombre
-  .replace(/[0-9]/g, "")
+  nombreTarjeta.value = valorNombre.replace(/[0-9]/g, "");
 });
 
-    
 numeroTarjeta.addEventListener("keyup", (e) => {
   let valorInput = e.target.value;
 
@@ -24,10 +22,7 @@ numeroTarjeta.addEventListener("keyup", (e) => {
     .trim();
   console.log(valorInput);
 
-  esValida.textContent = validator.validar(valorInput);
+  esValida.textContent = validator.isValid(valorInput);
   //Muestra el true o false
   numeroTarjeta.textContent = valorInput;
 });
-
-
-
