@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Card Validation</title>
+    <title>Card Validation Def</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -13,7 +13,7 @@
       <h1>Ingrese los Datos de su Tarjeta</h1>
       <h2>¿Necesitas ayuda? Llámanos al 2 23907918</h2>
     </header>
-    <form class="formulario-tarjeta">
+    <form class="formulario-tarjeta" id="formulario">
       <div class="box1">
         <label for="inputNombre">NOMBRE DE TARJETA:</label>
         <input type="text" id="inputNombre" />
@@ -39,6 +39,8 @@
       </div>
     </form>
     <p class="esValida"></p>
+    <p id="mascara"></p>
+
     <footer><button>Inicio</button></footer>
     <script src="index.js" type="module"></script>
   </body>
