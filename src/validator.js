@@ -1,13 +1,12 @@
 const validator = {
   isvalid: function (valorInput) {
-    
     let tarjeta = valorInput;
 
     let convierteTarjetaArray = tarjeta.split("");
-    //console.log(convierteTarjetaArray)
+    console.log(convierteTarjetaArray);
 
     let numeroTemporal = convierteTarjetaArray.filter((char) => char != " ");
-    //console.log(numeroTemporal);
+    console.log(numeroTemporal);
 
     //let darReverseTarjeta = numeroTemporal.reverse();
     //console.log(darReverseTarjeta);
@@ -32,6 +31,7 @@ const validator = {
       if (suma % 10 === 0) {
         console.log("tarjeta valida");
         //return "Tarjeta valida";
+
         return true;
       } else {
         console.log("tarjeta invalida");

@@ -7,16 +7,13 @@ const esValida = document.querySelector(".esValida");
 
 nombreTarjeta.addEventListener("keyup", (e) => {
   let valorNombre = e.target.value;
-  nombreTarjeta.value = valorNombre
-  .replace(/[0-9]/g, "")
+  nombreTarjeta.value = valorNombre.replace(/[0-9]/g, "");
 });
 
 formulario.addEventListener("submit", (e) =>{
   e.preventDefault()
   document.querySelector("#mascara").innerHTML = validator.maskify(numeroTarjeta.value)
 })
-
-    
 numeroTarjeta.addEventListener("keyup", (e) => {
   let valorInput = e.target.value;
 
@@ -29,11 +26,7 @@ numeroTarjeta.addEventListener("keyup", (e) => {
     // Elimina el ultimo espaciado
     .trim();
   console.log(valorInput);
-
   esValida.textContent = validator.isvalid(valorInput);
   //Muestra el true o false
   numeroTarjeta.textContent = valorInput;
 });
-
-
-
