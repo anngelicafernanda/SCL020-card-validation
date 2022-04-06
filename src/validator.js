@@ -1,7 +1,5 @@
 const validator = {
-  isValid: function (valorInput) {
-    //validar: (valorInput) => {
-
+  isvalid: function (valorInput) {
     let tarjeta = valorInput;
 
     let convierteTarjetaArray = tarjeta.split("");
@@ -32,7 +30,8 @@ const validator = {
       //Debemos de comprobar si es multiplo de 10
       if (suma % 10 === 0) {
         console.log("tarjeta valida");
-        // return "Tarjeta valida";
+        //return "Tarjeta valida";
+
         return true;
       } else {
         console.log("tarjeta invalida");
@@ -41,6 +40,18 @@ const validator = {
       }
     }
   },
+
+  maskify: (valorInput) => {
+    let tarjetaArray = valorInput.split('');
+  
+    for (let i = 0; i < tarjetaArray.length - 4; i++) {
+      tarjetaArray[i] = '*';
+    }
+  
+    let tarjetaMaskify = tarjetaArray.join('');
+  
+    return tarjetaMaskify; 
+  }
 };
 
 export default validator;
