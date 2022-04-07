@@ -1,49 +1,45 @@
 const validator = {
   isValid: function (valorInput) {
-    let tarjeta = valorInput;
-
-    let numeroTemporal = tarjeta.split("");
-
-
-    for (let i = 0; i < numeroTemporal.length; i++) {
-      if (i % 2 === 0) {
-        let acumulador = numeroTemporal[i] * 2;
-        if (acumulador >= 10) {
-          let acumulador2 = acumulador - 9;
-          numeroTemporal[i] = acumulador2;
+    const cardNumberArray = valorInput.split("");
+    // console.log("🚀 ~ cardNumberArray", cardNumberArray);
+    for (let index = 0; index < cardNumberArray.length; index++) {
+      if (index % 2 === 0) {
+        if (cardNumberArray[index] * 2 < 10) {
+          cardNumberArray[index] = cardNumberArray[index] * 2;
         } else {
-          numeroTemporal[i] = acumulador;
+          cardNumberArray[index] = cardNumberArray[index] * 2 - 9;
         }
-      }
-
-      let sumatoria = 0;
-      for (let i = 0; i < numeroTemporal.length; i++) {
-        sumatoria += parseInt(numeroTemporal[i]);
-      }
-      console.log (sumatoria);
-
-      if (sumatoria % 10 === 0) {
-        console.log("tarjeta valida");
-
-        return true;
       } else {
-        console.log("tarjeta invalida");
-        return false;
+        cardNumberArray[index] = cardNumberArray[index] * 1;
       }
     }
+    let suma = 0;
+    for (let index = 0; index < cardNumberArray.length; index++) {
+      suma = suma + cardNumberArray[index];
+    }
+    let cardValidated = 0;
+    if (suma % 10 === 0) {
+      cardValidated = true;
+    } else {
+      cardValidated = false;
+    }
+    // console.log("🚀 ~ cardNumberArrayDoubleSum", cardNumberArray);
+    // console.log("🚀 ~ sum", suma);
+    // console.log("🚀 ~ cardValidated", cardValidated);
+    return cardValidated;
   },
 
   maskify: (valorInput) => {
-    let tarjetaArray = valorInput.split('');
+    let tarjetaArray = valorInput.split("");
 
-    for (let i = 0; i < tarjetaArray.length - 4; i++) {
-      tarjetaArray[i] = '#';
+    for (let index = 0; index < tarjetaArray.length - 4; index++) {
+      tarjetaArray[index] = "#";
     }
 
-    let tarjetaMaskify = tarjetaArray.join('');
+    let tarjetaMaskify = tarjetaArray.join("");
 
     return tarjetaMaskify;
-  }
+  },
 };
 
 export default validator;
