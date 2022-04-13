@@ -1,24 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   background: linear-gradient(to bottom right, #adc5d9, #3c4973);
 }
 
+.logoTexto {
+  display: flex;
+  align-items: flex-start;
+  height: 200px;
+  width: 100%;
+}
+
 h1 {
-  text-align: center;
   color: white;
+  font-size: 40px;
+  margin-left: 300px;
+  margin-top: 120px;
 }
 
-footer {
-  margin-left: 100px;
+h2 {
+  color: white;
+  font-size: 14px;
+  margin-left: 120px;
 }
 
-form {
-  font-size: 20px;
-  text-align: center;
+.formulario-tarjeta {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #3772a6;
+  margin-top: 30px;
 }
 
-#validador {
-  width: 120px;
-  height: 40px;
+.box1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.box2 {
+  display: flex;
+  justify-content: center;
+  gap: 0px 10px;
+}
+
+.boxMonth,
+.boxYear,
+.boxCVV {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.box3 {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  padding-left: 25px;
+}
+
+#inputNombre,
+#inputNumero {
+  background: #b0babf;
+  width: 330px;
+  height: 50px;
+  font-size: 12px;
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+#month,
+#year,
+#cvv {
+  background: #b0babf;
+  width: 125px;
+  height: 50px;
   font-size: 15px;
-  border-radius: 5px;
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+button {
+  background: #3c4973;
+  font-size: 18px;
+  color: white;
+  border-radius: 30px;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+  border: none;
+}
+
+.inicio {
+  margin-left: 10px;
+}
+
+#containerResp {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+  color: #4d4c4c;
+  background:  #b0babf;
+  height: 250px;
+  width: 499px;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

@@ -1,45 +1,46 @@
-//import { inputRequiresLabel } from "htmlhint";
-
 const validator = {
-  validar: function (valorInput) {
-    //validar: (valorInput) => {
-
+  isValid: function (valorInput) {
     let tarjeta = valorInput;
 
-    let convierteTarjetaArray = tarjeta.split("");
-    //console.log(convierteTarjetaArray)
+    let numeroTemporal = tarjeta.split("");
 
-    let numerotemporal = convierteTarjetaArray.filter((char) => char != " ");
-    //console.log(numerotemporal);
-
-    //let darReverseTarjeta = numerotemporal.reverse();
-    //console.log(darReverseTarjeta);
-
-    for (let i = 0; i < numerotemporal.length; i++) {
+    for (let i = 0; i < numeroTemporal.length; i++) {
       if (i % 2 === 0) {
-        let aux = numerotemporal[i] * 2;
-        if (aux >= 10) {
-          let aux2 = aux - 9;
-          numerotemporal[i] = aux2;
+        let acumulador = numeroTemporal[i] * 2;
+        if (acumulador >= 10) {
+          let acumulador2 = acumulador - 9;
+          numeroTemporal[i] = acumulador2;
         } else {
-          numerotemporal[i] = aux;
+          numeroTemporal[i] = acumulador;
         }
       }
-
-      let suma = 0;
-      for (let i = 0; i < numerotemporal.length; i++) {
-        suma += parseInt(numerotemporal[i]);
-      }
-      console.log(suma);
-      //Debemos de comprobar si es multiplo de 10
-      if (suma % 10 === 0) {
-        console.log("tarjeta valida");
-        return "Tarjeta valida";
-      } else {
-        console.log("tarjeta invalida");
-        return "Tarjeta invalida";
-      }
     }
+    let sumatoria = 0;
+    for (let i = 0; i < numeroTemporal.length; i++) {
+      sumatoria += parseInt(numeroTemporal[i]);
+    }
+    console.log(sumatoria);
+
+    if (sumatoria % 10 === 0) {
+      console.log("tarjeta valida");
+
+      return true;
+    } else {
+      console.log("tarjeta invalida");
+      return false;
+    }
+  },
+
+  maskify: (valorInput) => {
+    let tarjetaArray = valorInput.split("");
+
+    for (let i = 0; i < tarjetaArray.length - 4; i++) {
+      tarjetaArray[i] = "#";
+    }
+
+    let tarjetaMaskify = tarjetaArray.join("");
+
+    return tarjetaMaskify;
   },
 };
 
