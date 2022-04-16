@@ -7,9 +7,7 @@
 - [1. Preámbulo](#1-preámbulo)
 - [2. Resumen del proyecto](#2-resumen-del-proyecto)
 - [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-- [4. Consideraciones generales](#4-consideraciones-generales)
-- [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-- [6. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)
+- [4. Criterios de aceptación mínimos del proyecto](#4-criterios-de-aceptación-mínimos-del-proyecto)
 
 ---
 
@@ -19,14 +17,6 @@ El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
 también llamado algoritmo de módulo 10, es un método de suma de verificación,
 se utiliza para validar números de identificación; tales como el IMEI de los
 celulares, tarjetas de crédito, etc.
-
-Este algoritmo es simple. Obtenemos la reversa del número a verificar (que
-solamente contiene dígitos [0-9]); a todos los números que ocupan una posición
-par se les debe multiplicar por dos, si este número es mayor o igual a 10,
-debemos sumar los dígitos del resultado; el número a verificar será válido si
-la suma de sus dígitos finales es un múltiplo de 10.
-
-![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
 
 ## 2. Resumen del proyecto
 
@@ -51,12 +41,6 @@ El proyecto Atenea Tech - Card Validation consiste en desarrollar el algoritmo d
 - [ ] **Manejo de eventos del DOM (listeners)**
 
 - [ ] **Manipulación dinámica del DOM**
-
-    <details><summary>Links</summary><p>
-
-  - [Element.innerHTML - MDN](https://developer.mozilla.org/es/docs/Web/API/Element/innerHTML)
-  - [Node.textContent - MDN](https://developer.mozilla.org/es/docs/Web/API/Node/textContent)
-  </p></details>
 
 ### JavaScript
 
@@ -118,23 +102,23 @@ Se utilizaron solo caracteres numéricos (dígitos) en la tarjeta a validar [0-9
 
 Nuestra interfaz permite al usuario:
 
-- Insertar el número que queremos validar.
+- Insertar el número que se quiere validar.
 - Ver el resultado si es válido o no.
 - Ocultar todos los dígitos de su número de tarjeta menos los últimos
   4 caracteres.
-- No debe poder ingresar un campo vacío.
+- No permite ingresar un campo vacío.
 
 ### UX (Diseño de experiencia de usuario)
 
 - Se trabajó en un primer prototipo con papel y lápiz (blanco y negro).
-  [Canva](https://www.canva.com/design/DAE9zC1Ymzc/xBdMM-JWJGDMno98QscyAw/view?utm_content=DAE9zC1Ymzc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+  [Prototipo de baja fidelidad](https://www.canva.com/design/DAE9zC1Ymzc/xBdMM-JWJGDMno98QscyAw/view?utm_content=DAE9zC1Ymzc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
-- Luego elaboramos un prototipo de alta fidelidas basado en el prototipo en papel y en el enlace se encuentra el feedback recibido. (https://www.canva.com/design/DAE9zB_GhJU/sBo1iK4ohjmSSuQVZckNSg/view?utm_content=DAE9zB_GhJU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
+- Se elaboró un prototipo de alta fidelidad basado en el prototipo en papel y en el enlace se encuentra el feedback recibido. ([Feedback] (https://www.canva.com/design/DAE9zB_GhJU/sBo1iK4ohjmSSuQVZckNSg/view?utm_content=DAE9zB_GhJU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)).
 
 - Tomamos lo aprendido y las recomendaciones del feedback y desarrollamos un
   nuevo prototipo usando canva, adicional a ello elaboramos un diagrama de flujo del sistema.
-  ([Canva](https://www.canva.com/design/DAE7urmTjqM/vYPNxRHsEVoZdBZn_QffWg/view?utm_content=DAE7urmTjqM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton), [Diagrama de Flujo](https://www.canva.com/design/DAE7vEZjcR0/veP8aVIx1qTRlDDCumYlng/view?utm_content=DAE7vEZjcR0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton))
+  ([Prototipo de alta fidelidad](https://www.canva.com/design/DAE7urmTjqM/vYPNxRHsEVoZdBZn_QffWg/view?utm_content=DAE7urmTjqM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton), [Diagrama de Flujo](https://www.canva.com/design/DAE7vEZjcR0/veP8aVIx1qTRlDDCumYlng/view?utm_content=DAE7vEZjcR0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton))
 
 #### Imagen final de proyecto
 
-Link de imagen final del proyecto: (https://www.canva.com/design/DAE9zb9wlpU/6SIDDj7z-y21VhJxvMsN6A/view?utm_content=DAE9zb9wlpU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+Link de imagen final del proyecto: ([Imágenes finales del Proyecto](https://www.canva.com/design/DAE9zb9wlpU/6SIDDj7z-y21VhJxvMsN6A/view?utm_content=DAE9zb9wlpU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton))
