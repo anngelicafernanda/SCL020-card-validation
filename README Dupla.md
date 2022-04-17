@@ -113,7 +113,7 @@ Nuestra interfaz permite al usuario:
 - Se trabajó en un primer prototipo con papel y lápiz (blanco y negro).
   [Prototipo de baja fidelidad](https://www.canva.com/design/DAE9zC1Ymzc/xBdMM-JWJGDMno98QscyAw/view?utm_content=DAE9zC1Ymzc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
-- Se elaboró un prototipo de alta fidelidad basado en el prototipo en papel y en el enlace se encuentra el feedback recibido. ([Feedback] (https://www.canva.com/design/DAE9zB_GhJU/sBo1iK4ohjmSSuQVZckNSg/view?utm_content=DAE9zB_GhJU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)).
+- Se elaboró un prototipo de alta fidelidad basado en el prototipo en papel y en el enlace se encuentra el feedback recibido. ([Feedback](https://www.canva.com/design/DAE9zB_GhJU/sBo1iK4ohjmSSuQVZckNSg/view?utm_content=DAE9zB_GhJU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton))
 
 - Tomamos lo aprendido y las recomendaciones del feedback y desarrollamos un
   nuevo prototipo usando canva, adicional a ello elaboramos un diagrama de flujo del sistema.
