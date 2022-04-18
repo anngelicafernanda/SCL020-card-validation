@@ -98,6 +98,9 @@ Se utilizaron solo caracteres numéricos (dígitos) en la tarjeta a validar [0-9
 
   Con esta iniciativa se puede adquirir un equipo tecnológico desde laptop o teléfono, sin asistir presencialmente a una tienda física.
 
+- A fin de tomar en cuenta lo mencionado en items anteriores, se realizó una planificación del proyecto en Trello.
+  [Planificación](https://trello.com/invite/b/NAIIM76C/ae0e10c73c1340ce5fae808a1a1f1068/kanban-template)
+
 ### Interfaz de usuario (UI)
 
 Nuestra interfaz permite al usuario:
