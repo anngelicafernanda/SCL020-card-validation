@@ -76,6 +76,6 @@ Nuestra interfaz permite al usuario:
   nuevo prototipo usando canva, adicional a ello elaboramos un diagrama de flujo del sistema.
   ([Prototipo de alta fidelidad](https://www.canva.com/design/DAE7urmTjqM/vYPNxRHsEVoZdBZn_QffWg/view?utm_content=DAE7urmTjqM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton), [Diagrama de Flujo](https://www.canva.com/design/DAE7vEZjcR0/veP8aVIx1qTRlDDCumYlng/view?utm_content=DAE7vEZjcR0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton))
 
-#### Imagen final de proyecto
+#### Link ejecutable del proyecto
 
-Link ejecutable del proyecto: ([Proyecto](https://anngelicafernanda.github.io/SCL020-card-validation/src/index.html))
+- Ejecutable del Proyecto ([Proyecto](https://anngelicafernanda.github.io/SCL020-card-validation/src/index.html))
