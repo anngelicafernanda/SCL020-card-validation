@@ -92,26 +92,52 @@ button {
   color: white;
   border-radius: 30px;
   padding: 20px 30px;
-  margin-bottom: 30px;
   border: none;
 }
 
 .inicio {
   margin-left: 10px;
+  margin-top: 150px;
+  position: static;
 }
 
 #containerResp {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   flex-direction: column;
   color: #4d4c4c;
-  background:  #b0babf;
-  height: 250px;
-  width: 499px;
+  background: #dce6f2;
+  height: auto;
+  width: auto;
   border-radius: 30px;
   position: absolute;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px;
+}
+
+.esValida,
+#mascara,
+#mensaje {
+  font-size: 22px;
+  font-family: Alegreya;
+  margin: 0 0 15px 0;
+}
+
+#verified {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+#invalid {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  position: absolute;
+  bottom: 55px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
