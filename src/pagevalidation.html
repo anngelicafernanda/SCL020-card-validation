@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Validation</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body id="body">
+    <header class="logoTexto">
+      <img src="atenea tech.png" alt="" width="170px" height="120px" />
+      <h1>Ingrese los Datos de su Tarjeta</h1>
+      <h2>¿Necesitas ayuda? Llámanos al 2 23907918</h2>
+    </header>
+    <form class="formulario-tarjeta" id="formulario">
+      <div class="box1">
+        <label for="inputNombre">NOMBRE DE TARJETA:</label>
+        <input
+          type="text"
+          id="inputNombre"
+          placeholder="Carolina Colmenares"
+          required
+        />
+        <label for="inputNumero">NRO. DE TARJETA:</label>
+        <input
+          type="text"
+          id="inputNumero"
+          maxlength="16"
+          placeholder="1234123412341234"
+          required
+        />
+      </div>
+      <div class="box2">
+        <div class="boxMonth">
+          <label for="month">MES:</label>
+          <input
+            type="text"
+            id="month"
+            maxlength="2"
+            placeholder="12"
+            required
+          />
+        </div>
+        <div class="boxYear">
+          <label for="year">AÑO:</label>
+          <input
+            type="text"
+            id="year"
+            maxlength="4"
+            placeholder="2026"
+            required
+          />
+        </div>
+        <div class="boxCVV">
+          <label for="cvv">CVV:</label>
+          <input
+            type="text"
+            id="cvv"
+            minlength="3"
+            maxlength="3"
+            placeholder="###"
+            required
+          />
+        </div>
+      </div>
+      <div class="box3">
+        <button type="submit">Validar Tarjeta</button>
+      </div>
+    </form>
+    <form id="containerResp">
+      <p class="esValida"></p>
+      <p id="mascara"></p>
+      <p id="mensaje"></p>
+      <img src="verified.png" id="verified" />
+      <img src="invalid.png" id="invalid" />
+      <button type="submit" onclick="location.reload()">Aceptar</button>
+    </form>
+    <script src="scriptvalidation.js" type="module"></script>
+  </body>
+  <footer>
+    <a href="index.html">
+      <button class="inicio">Inicio</button>
+    </a>
+  </footer>
+</html>
